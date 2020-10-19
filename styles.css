@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+a {
+  outline: none;
+}
+
+button,
+input {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wrap {
+  background: #313a5a;
+  width: 1280px;
+  height: 920px;
+  color: #ffffff;
+  position: relative;
+}
+
+.page-header {
+  width: 1177px;
+  height: 58px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.page-logo {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.page-navigation ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.page-login a {
+  color: #ffffff;
+  margin-right: 40px;
+}
+
+.head-btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background: #1fdb84;
+  box-shadow: 0px 8px 34px rgba(31, 219, 132, 0.6);
+  border-radius: 5px 0px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.head-btn:hover {
+  background: #17ac66;
+}
+
+.wrap-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-description {
+  padding-top: 146px;
+  width: 553px;
+  text-align: left;
+}
+
+.page-description h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.page-description p {
+  padding-top: 40px;
+  line-height: 32px;
+}
+
+.page-pic img {
+  width: 463px;
+  height: 881px;
+  padding-top: 57px;
+}
+
+.btn-desc {
+  width: 200px;
+  height: 60px;
+  color: #ffffff;
+  background: #1fdb84;
+  box-shadow: 0px -8px 34px rgba(31, 219, 132, 0.6);
+  border-radius: 10px 0px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.btn-desc:hover {
+  background: #159258;
+}
+
+.benefits {
+  width: 1220px;
+  height: 420px;
+  background: #ffffff;
+  box-shadow: 0px 10px 34px rgba(210, 210, 210, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 800px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 66px;
+  text-align: left;
+}
+
+.benefits-card {
+  width: 300px;
+  height: 270px;
+}
+
+.ben-logo {
+  width: 72px;
+  height: 72px;
+  background: rgba(31, 219, 132, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ben-name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #031d5b;
+  margin-top: 26px;
+}
+
+.ben-line {
+  width: 60px;
+  height: 4px;
+  background: #1fdb84;
+  margin-top: 29px;
+}
+
+.ben-description {
+  color: #5b6c94;
+  line-height: 32px;
+  margin-top: 18px;
+}
+
+.price {
+  padding-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.price h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 64px;
+  color: #32325c;
+}
+
+.radio-container {
+  width: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  margin-top: 60px;
+}
+
+.radio-btn input {
+  display: none;
+}
+
+.nth-1 input + label {
+  width: 162px;
+}
+
+.nth-2 input + label {
+  width: 308px;
+}
+
+.radio-btn label {
+  display: inline-block;
+  color: #1fdb84;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-btn input:checked + label {
+  background: #f1fff8;
+  border: 1px solid #aefdd9;
+  color: #6fdeaa;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-row {
+  display: flex;
+}
+
+.price-card {
+  width: 330px;
+  height: 552px;
+  margin-top: 120px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.price-card:hover {
+  transform: scale(1.1);
+  border-top: 1px solid #0a8aff;
+}
+
+.price-card:first-child {
+  margin-left: 0;
+}
+
+.price-name {
+  font-weight: bold;
+  font-size: 24px;
+  color: #32325c;
+}
+
+.price-cost {
+  font-size: 72px;
+  color: #1fdb84;
+  padding-top: 31px;
+}
+
+.price-month {
+  color: #5b6c94;
+  padding-top: 13px;
+}
+
+.price-desc {
+  padding-top: 40px;
+}
+
+.price-desc li {
+  list-style-type: none;
+  line-height: 32px;
+  padding-top: 20px;
+  color: #5b6c94;
+  letter-spacing: 0.2px;
+}
+
+.price-btn-row {
+  padding-top: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -125px;
+}
+.price-btn {
+  width: 250px;
+  height: 60px;
+  background: #1fdb84;
+  box-shadow: 0px 8px 34px rgba(31, 219, 132, 0.6);
+  border: none;
+  border-radius: 5px 0px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.price-btn:hover {
+  background: #168f56;
+}
+
+.page-footer {
+  margin-top: 134px;
+  font-size: 16px;
+  color: #5b6c94;
+}
+
+.foot-menu {
+  padding-top: 50px;
+}
+
+.foot-menu a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.foot-menu a:first-child {
+  padding-left: 0px;
+}

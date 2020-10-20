@@ -35,23 +35,26 @@ a {
 }
 
 body {
+  max-width: 1920px;
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .wrap {
   background: #313a5a;
-  width: 1280px;
+  width: 100vw;
   height: 920px;
   color: #ffffff;
   position: relative;
 }
 
 .page-header {
-  width: 1177px;
+  width: 100vw;
   height: 58px;
   display: flex;
   justify-content: space-around;
@@ -100,7 +103,7 @@ body {
 
 .page-description {
   padding-top: 146px;
-  width: 553px;
+  width: 45vw;
   text-align: left;
 }
 
@@ -114,9 +117,12 @@ body {
   line-height: 32px;
 }
 
+.page-pic {
+  width: 45vw;
+}
+
 .page-pic img {
-  width: 463px;
-  height: 881px;
+  width: 45vw;
   padding-top: 57px;
 }
 
@@ -138,13 +144,13 @@ body {
 }
 
 .benefits {
-  width: 1220px;
+  width: 95vw;
   height: 420px;
   background: #ffffff;
   box-shadow: 0px 10px 34px rgba(210, 210, 210, 0.5);
   border-radius: 10px;
-  position: absolute;
-  margin-top: 800px;
+  position: relative;
+  margin-top: -5vh;
   display: flex;
   justify-content: space-around;
   padding-top: 66px;
@@ -152,7 +158,7 @@ body {
 }
 
 .benefits-card {
-  width: 300px;
+  width: 30vw;
   height: 270px;
 }
 
@@ -187,7 +193,7 @@ body {
 }
 
 .price {
-  padding-top: 400px;
+  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,7 +208,6 @@ body {
 }
 
 .radio-container {
-  width: 470px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,15 +250,21 @@ body {
 }
 
 .price-row {
+  width: 100vw;
   display: flex;
+  justify-content: space-around;
 }
 
 .price-card {
-  width: 330px;
-  height: 552px;
+  width: 30vw;
+  /* height: 552px; */
   margin-top: 120px;
-  position: relative;
-  margin-left: 50px;
+  /* position: relative; */
+  /* margin-left: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .price-card:hover {
@@ -261,9 +272,9 @@ body {
   border-top: 1px solid #0a8aff;
 }
 
-.price-card:first-child {
+/* .price-card:first-child {
   margin-left: 0;
-}
+} */
 
 .price-name {
   font-weight: bold;
@@ -284,6 +295,7 @@ body {
 
 .price-desc {
   padding-top: 40px;
+  height: 280px;
 }
 
 .price-desc li {
@@ -296,10 +308,10 @@ body {
 
 .price-btn-row {
   padding-top: 100px;
-  position: absolute;
+  /* position: absolute;
   bottom: 0px;
   left: 50%;
-  margin-left: -125px;
+  margin-left: -125px; */
 }
 .price-btn {
   width: 250px;
@@ -334,4 +346,141 @@ body {
 
 .foot-menu a:first-child {
   padding-left: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .page-logo {
+    font-size: 24px;
+  }
+
+  .head-btn {
+    width: 100px;
+    height: 35px;
+  }
+
+  .page-description h1 {
+    font-size: 40px;
+  }
+
+  .btn-desc {
+    width: 170px;
+    height: 50px;
+  }
+
+  .wrap {
+    height: 95vh;
+  }
+
+  .benefits {
+    margin-top: -5vh;
+  }
+
+  .price h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .price-name {
+    font-size: 20px;
+  }
+
+  .price-cost {
+    font-size: 40px;
+  }
+
+  .price-btn {
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
+  .page-logo {
+    font-size: 16px;
+  }
+
+  .page-login {
+    display: none;
+  }
+
+  .page-description {
+    padding-top: 40px;
+  }
+
+  .page-description h1 {
+    font-size: 22px;
+  }
+
+  .page-description p {
+    padding-top: 15px;
+    line-height: 20px;
+  }
+
+  .btn-desc {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .wrap {
+    height: 77vh;
+  }
+
+  .ben-logo {
+    width: 10vw;
+    height: 10vh;
+  }
+
+  .ben-name {
+    margin-top: 20px;
+    font-size: 12px;
+    height: 20px;
+  }
+
+  .ben-line {
+    margin-top: 20px;
+    width: 40px;
+  }
+
+  .ben-description {
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .price h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .nth-1 input + label {
+    width: 100px;
+  }
+
+  .nth-2 input + label {
+    width: 220px;
+  }
+
+  .price-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-footer {
+    margin-top: 110px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 10px;
+  }
 }
